@@ -116,7 +116,7 @@ def coef_random(an,bn,Random_trun=30,E=1,p=-1):
     return an_random,bn_random
 
 
-def getInt_random(an,bn,Random_trun=30,E=1,p=-1,a=0,b=1):
+def getint_random(an,bn,Random_trun=30,E=1,p=-1,a=0,b=1):
     '''
     Takes Fourier coefficients and output random integration value
     :param an, bn: Base Fourier coefficients
@@ -128,5 +128,5 @@ def getInt_random(an,bn,Random_trun=30,E=1,p=-1,a=0,b=1):
     :return:Integration value
     '''
     an_random,bn_random=coef_random(an,bn,Random_trun=Random_trun,E=E,p=p)
-    Int_random=integrate.quad(YT, a, b,args=(an_random,bn_random))[0]
-    return Int_random
+    int_random=integrate.quad(YT, a, b,args=(an_random,bn_random))[0]
+    return int_random

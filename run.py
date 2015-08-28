@@ -30,7 +30,7 @@ print integrate.quad(YT, a, b,args=(an,bn))[0]  -  integrate.quad(YTOrigin, a, b
 
 np.random.seed(123)
 
-QoI = ([getInt_random(an,bn,E=0.5,p=-2) for i in range(5000)])
+QoI = ([getint_random(an,bn,E=0.5,p=-2) for i in range(5000)])
 
 
 

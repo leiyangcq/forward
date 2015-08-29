@@ -1,4 +1,4 @@
-__author__ = 'yangleicq'
+
 
 
 import numpy as np
